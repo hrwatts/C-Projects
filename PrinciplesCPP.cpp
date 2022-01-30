@@ -103,9 +103,18 @@ int main(int argc, char* argv[])
     std::vector<int> v(22);
     bool b = (v[6]);
     printf("bool b = %d", !b); // returns 1
-    /* Note that using namespace std; is bad practice 
-        because this automatically includes
-        all header files in the standard library */
+    /* Note using namespace std;
+
+        source: https://www.geeksforgeeks.org/using-namespace-std-considered-bad-practice/
+        "The statement using namespace std is generally considered bad practice. 
+        The alternative to this statement is to specify the namespace to which 
+        the identifier belongs using the scope operator(::) each time we declare a type. 
+        Although the statement saves us from typing std:: whenever we wish to access a class 
+        or type defined in the std namespace, it imports the entirety of the std namespace 
+        into the current namespace of the program. Let us take a few examples to understand 
+        why this might not be such a good thing"
+        
+    */
     
     // more vectors    
     std::cout << "\n \n" << std::endl;
