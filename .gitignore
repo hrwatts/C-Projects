@@ -274,3 +274,9 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# C and C++ build outputs
+*.exe
+*.obj
+*.o
+*.out
